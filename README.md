@@ -52,7 +52,7 @@ Bounties range from small daily ones (a poster, a forecast, a small game) to mul
 ## Tips that decide the outcome
 
 - **Read what already won.** On a judged bounty, open the leaderboard and look at the top entries: what they contain, how dense they are, how they handle the requirement. Then build something at least that complete, and clearly your own.
-- **Respect the hard gates first.** Transcripts, license, README badges, repository ownership, and file size caps decide whether an entry is ranked at all. A brilliant entry that misses a badge scores zero.
+- **Respect the hard gates first.** The mechanical gates (transcripts, license, README badges, repository ownership, and file size caps) decide whether an entry is ranked at all, so clear them before polishing anything else. A brilliant entry that misses a badge scores zero.
 - **Run the local check before you submit.** It catches most refusals in seconds instead of after a submission that costs you a daily slot.
 - **Enter early.** Several bounties rank live metrics, and a head start compounds. On judged bounties, an early entry still gets judged on its own merit.
 - **Keep the session clean.** One session, written in order, with the file edits inside it, is what the transcript checks read.
