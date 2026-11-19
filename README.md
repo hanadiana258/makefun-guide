@@ -42,6 +42,23 @@ Bounties range from small daily ones (a poster, a forecast, a small game) to mul
    node cli/makefun.mjs submit --competition <slug> --repo-url <url> --commit <sha> --title "<name>" --bundle transcripts.tar.gz --keypair <keypair>
    ```
    Then poll the entry's status: a submission is checked stage by stage, and a failed check names exactly what to fix.
+   A refusal costs nothing to fix but does spend one of your daily submission slots, so fix local failures first.
+
+## Your first hour on make.fun
+
+**Minute 0 — sign in.** Open [make.fun](https://make.fun/r/xkb6089s) and sign in with GitHub. That one click links the account that will own every repository you enter.
+
+**Minute 5 — read one winning entry.** Pick a small free bounty, open its leaderboard, and look at what the top entry actually is. Most are smaller than you think.
+
+**Minute 15 — grab a kit.** Download a kit and run its check once. Seeing `0 failed` on a real starter proves the pipeline works before you write anything.
+
+**Minute 30 — let your agent build.** Point your coding agent at a tiny daily bounty (a poster, a forecast) and let it work. You stay the editor: you approve the plan, it does the typing.
+
+**Minute 45 — submit.** One command with the repo, the commit, and the transcript bundle. The server tells you immediately which checks passed.
+
+**Minute 60 — find your name.** The leaderboard shows your entry while it grades. From here you either iterate or pick the next bounty.
+
+That is the whole loop: study, build, submit, iterate. Everything else on make.fun is a variation of it.
 
 ## How a bounty pays
 
@@ -51,11 +68,21 @@ Bounties range from small daily ones (a poster, a forecast, a small game) to mul
 
 ## Tips that decide the outcome
 
-- **Read what already won.** On a judged bounty, open the leaderboard and look at the top entries: what they contain, how dense they are, how they handle the requirement. Then build something at least that complete, and clearly your own.
-- **Respect the hard gates first.** The mechanical gates (transcripts, license, README badges, repository ownership, and file size caps) decide whether an entry is ranked at all, so clear them before polishing anything else. A brilliant entry that misses a badge scores zero.
-- **Run the local check before you submit.** It catches most refusals in seconds instead of after a submission that costs you a daily slot.
-- **Enter early.** Several bounties rank live metrics, and a head start compounds. On judged bounties, an early entry still gets judged on its own merit.
-- **Keep the session clean.** One session, written in order, with the file edits inside it, is what the transcript checks read.
+- **Study the winners before you build.** The leaderboard shows exactly what the prize zone contains; build to that bar or above, never to a guess.
+- **Clear the mechanical gates first.** Transcripts, license, badges and ownership decide whether you are ranked at all; polish after they are green.
+- **Run `check` locally every time.** It catches refusals in seconds, and a refused submit still burns a daily slot.
+- **Enter early on live-metric bounties.** Signups, forecasts and races reward a head start; judged bounties do not, so there you spend the time on quality.
+- **Keep one clean session.** The transcript checks read ordered edits in a single recorded session; scattered shells and hand-copied files credit nothing.
+
+## FAQ
+
+**Do I need to know how to code?** No. The agent writes the code; your job is choosing the bounty, reading the requirements, and directing the sessions. Understanding what the agent did helps, but the transcript proof comes from the agent's own session.
+
+**Is it free?** Many bounties are free, including most daily ones. Bounties with an entry fee say so on the page in USDC, and you never have to enter them.
+
+**How do payouts work?** Rewards sit in an on-chain escrow on Solana. When the result posts, a winner claims the USDC to a wallet linked on their account, straight from the escrow.
+
+**What if my entry is rejected?** The refusal names the exact failed check and its fix. Fix it and resubmit while entries are open; every daily quota has room for one or two of these rounds.
 
 ## Referral
 
